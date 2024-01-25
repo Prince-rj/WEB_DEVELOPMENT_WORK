@@ -1,0 +1,30 @@
+p{
+    margin: 12px;
+    padding:10px;
+}
+h1{
+    margin-top: 10px;
+    text-align: center;
+}
+h2{
+    padding: 12px;
+}
+.Crypto_container{
+    border-radius: 12px;
+    width: 80%;
+    padding:40px;
+    padding-bottom: 10px;
+    box-shadow: 0 0 0 2px hotpink;
+    background-color: rgba(255, 255, 255, 0.545);
+    color: black;
+    margin: auto;
+}
+.Crypto_container ul{
+    margin-left: 40px;
+}
+.Crypto_container ol{
+    margin-left: 40px;
+}
+.navbar.crypto{
+    margin-bottom: 20px;
+}

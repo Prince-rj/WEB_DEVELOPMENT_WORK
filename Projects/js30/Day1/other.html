@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+    <style>
+        body{
+            height: 100vh;
+            background: no-repeat  center url('https://source.unsplash.com/random/?music');
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        div{
+            width: 77px;
+            height:77px;
+            border: 2px solid white;
+            margin-left: 22px;
+            display: flex;
+            color:white;
+            background-color: rgba(0, 0, 0, 0.534);
+            align-items: center;
+            font-size: 23px;
+            justify-content: center;
+            transition: all 0.5s;
+        }
+        .st{
+            transform: scale(1.4);
+            border:1px solid yellow;
+        }
+        audio{
+            /* display:none; */
+        }
+        
+    </style>
+</head>
+<body>
+    <div data-key="65">A</div>
+    <div data-key="83">S</div>
+    <div data-key="68">D</div>
+    <div data-key="70">F</div>
+    <div data-key="71">G</div>
+    <div data-key="72">H</div>
+    <div data-key="74">J</div>
+    <div data-key="75">K</div>
+    <div data-key="76">L</div>
+
+    <audio data-key='65'src="/audio/1.wav"></audio>
+    <audio data-key='83'src="/audio/2.wav"></audio>
+    <audio data-key='68'src="/audio/3.wav"></audio>
+    <audio data-key='70'src="/audio/4.wav"></audio>
+    <audio data-key='71'src="/audio/5.wav"></audio>
+    <audio data-key='72'src="/audio/6.wav"></audio>
+    <audio data-key='74'src="/audio/7.wav"></audio>
+    <audio data-key='75'src="/audio/8.wav"></audio>
+    <audio data-key='76'src="/audio/9.wav"></audio>
+</body>
+<script>
+
+document.addEventListener('keydown',(e)=>{
+    let aud=document.querySelector(`audio[data-key="${e.keyCode}"]`)
+    let box=document.querySelector(`div[data-key="${e.keyCode}"]`)
+    if(!aud)return;
+    if(!box)return;
+    box.classList.add('st')
+
+    let div=document.querySelectorAll('div');
+    div.forEach(element => {
+        
+        element.addEventListener('transitionend',()=>{
+            element.classList.remove('st');
+        })
+    });
+    // setTimeout(() => {
+    //     box.classList.remove('st')
+    // }, 200);
+    aud.load()
+    aud.play()
+
+    // document.querySelector(`audio[data-key="${   e.keyCode}"]`).play();
+
+
+}
+)
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</html>

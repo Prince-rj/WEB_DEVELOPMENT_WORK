@@ -1,0 +1,168 @@
+
+.left {
+    /* border: 2px solid red; */
+    display: inline-block;
+    position: absolute;
+    left: 34px;
+    top: 15px;
+
+}
+
+.left img {
+    width: 80px;
+    text-align: center;
+    filter: invert(100%);
+}
+
+.left div {
+    text-align: center;
+    font-size: 15px;
+    color: rgba(212, 192, 175, 0.815);
+    font-family: 'Itim', cursive;
+    line-height: 0px;
+
+
+}
+
+.mid {
+    /* border: 2px solid rgb(100, 96, 32); */
+
+    display: block;
+    margin: 22px auto;
+    width: 50%;
+    box-sizing: border-box;
+    /* border-radius: 10px; */
+    backdrop-filter: blur(3px);
+}
+
+.right {
+    /* border: 2px solid rgb(57, 85, 57); */
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    text-align: center;
+}
+
+#nav {
+    display: inline-block;
+
+
+
+}
+
+#nav li {
+    display: inline-block;
+    font-size: 22px;
+
+
+}
+
+#nav li a {
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 15px;
+}
+
+#nav li a:hover {
+    color: wheat;
+    text-decoration: underline;
+}
+
+#nav li a:active {
+    color: rgba(218, 211, 238, 0.719);
+    text-decoration: none;
+
+
+}
+
+#nav li a:visited {
+    color: rgba(149, 223, 198, 0.486);
+    text-decoration: none;
+
+}
+
+.btn {
+    margin: 9px;
+    background-color: rgb(24, 23, 31);
+    color: rgb(204, 218, 223);
+    padding: 4px 14px;
+    border: 2px rgb(15, 1, 15);
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+
+.btn:hover {
+    background-color: rgba(16, 16, 19, 0.466);
+}
+
+.container {
+    border: 2px solid white;
+    margin: 60px 45px;
+    padding: 20px 30px;
+    width: 33%;
+    border-radius: 10px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.container h2 {
+    text-align: center;
+    font-size: 25px;
+    color: rgb(238, 200, 200);
+}
+
+.formGroup input {
+    text-align: center;
+    display: block;
+    margin: 11px auto;
+    width: 290px;
+    font-size: 20px;
+    border-radius: 10px;
+    font-family: 'Baloo Bhaina 2', cursive;
+
+}
+
+#submitbtn {
+    text-align: center;
+    margin: 0px 0px 0px 10px;
+    display: inline-block;
+    padding: 2px 18px;
+}
+
+#resetbtn {
+    margin: 0px 0px 0px 160px;
+    display: inline-block;
+    padding: 2px 22px;
+}
+
+.info {
+    background-color: rgb(221, 216, 206);
+    opacity: 0.89;
+    /* border: 2px solid red; */
+    display: inline-block;
+    float: right;
+    margin: 60px 15px;
+    width: 55%;
+    box-sizing: border-box;
+    padding: 10px;
+    /* background-color: rgb(213, 226, 235); */
+    /* backdrop-filter: blur(50px); */
+    border-radius: 12px;
+    
+}
+
+.info h2 {
+    text-align: center;
+    color: rgb(0, 17, 17);
+    text-shadow: 1px 1px 6px white;
+}
+.info p{
+    
+    color: rgb(27, 34, 2);
+    text-shadow:0.1px 0.1px 1.5px rgb(228, 223, 214);
+    
+
+}

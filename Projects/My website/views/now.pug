@@ -1,0 +1,25 @@
+extends base.pug
+block style
+    style 
+        include ../static/stylenow.css
+block navname 
+    | Now
+block list
+    ul.listnow
+        li.nowli
+            a.nowa(href="/")  Plannings
+        li.nowli
+            a.nowa(href="/failedPlans") Failed Plans  
+        li.nowli
+            a.nowa(href="/thinking")  Thinking 
+        li.nowli
+            a.nowa(href="/longgoal")  Long term goal
+        li.nowli
+            a.nowa(href="/shortgoal")  Short term goals  
+block content 
+    div.cont2
+        div.containermain
+            h1.headercontainermain 
+                block heading 
+            div.paragraph 
+                block paragraph

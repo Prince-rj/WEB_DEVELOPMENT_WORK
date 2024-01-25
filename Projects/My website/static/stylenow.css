@@ -1,0 +1,46 @@
+.cont2{
+    padding-top: 45px;
+    background:url("https://source.unsplash.com/1600x900/?nature,water");
+    background-size: cover;
+    height: 120vh;
+
+}
+.listnow{
+    display: block;
+    width: 100%;
+
+}
+.nowa,.nowli{ 
+    padding: 50px 0px;
+    text-align: center;
+}
+.nowli{
+    width: 100%;
+    border-bottom: 1px #ccc dotted;
+}
+.nowa{
+    padding: 0 50px;
+    color: #333;
+    text-decoration: none;
+}
+.headercontainermain {
+    padding-top: 50px;
+    text-align: center;
+    width: 15%;
+    margin: auto;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 2.7rem;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.652);
+}
+.paragraph{
+    width: 70%;
+    margin: auto;
+    text-align: justify;
+    font-size: 1.3rem;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.652);
+}
+

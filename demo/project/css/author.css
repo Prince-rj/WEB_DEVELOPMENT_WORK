@@ -1,0 +1,17 @@
+.authors_container{
+    border: 2px solid black;
+    width: 70%;
+    margin: auto;
+    margin-top: 12px;
+    padding: 40px;
+    padding-top: 0;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.493);
+}
+.authors_container h1{
+    margin-top: 12px;
+    text-align: center;
+}
+.liststudents{
+    padding: 10px;
+}

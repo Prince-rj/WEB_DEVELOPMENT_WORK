@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: no-repeat center / cover url('https://source.unsplash.com/1600x900/?doctor,virus,covid-19');
+}
+nav{
+    /* background-color: rgba(0, 0, 0, 0.514); */
+    height: 82px;
+    background-color: rgba(0, 0, 0, 0.719);
+    
+}
+ul{
+    /* border-radius: 50px; */
+     margin: auto;
+     height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 24px 30px; */
+    /* position: absolute; */
+    left: 0;
+}
+.item{
+    list-style: none;   
+    padding: 24px 0px;
+}
+.item a{   
+    padding: 24px 30px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    transition: all  0.2s ease-in-out;
+    border-radius: 14px;
+}
+.item a:hover{
+    background-color: rgb(255, 250, 250);;
+    color:rgb(0, 0, 0);
+    border-radius: 14px;
+    box-shadow: 7px 7px 7px black;
+    margin: 0;
+}
+.container{
+    margin: 20px auto;
+    width:65%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    line-height: 30px;
+    background-color: white;
+    padding: 50px;
+    border-radius: 12px;
+}
+h1{
+    padding: 5px;
+    margin-bottom: 25px; 
+    text-align: center;
+}
+h2{
+    margin: 25px 0;
+}
+

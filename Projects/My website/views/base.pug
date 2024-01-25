@@ -1,0 +1,40 @@
+html 
+    head 
+        title My website
+        style
+            include ../static/style.css
+        block style 
+        
+    body 
+        nav 
+            div.hamburger 
+                div.box
+                div.box
+                div.box
+            div.containerham 
+                div.close
+                    div.hamburger.hamburger1
+                        div.box
+                        div.box
+                        div.box
+                    span#s1
+                        block navname
+                block list
+            ul
+                li
+                    a.li(href="/")  Now
+                li
+                    a.li(href="/journey") Journey
+            div.logo 
+                a(href="/profile") 
+                    img(src="https://source.unsplash.com/900x900/?profile", alt="", height="70px")
+            ul   
+                li
+                    a.li.li1(href="/friends") Friends
+                li
+                    a.li.li1(href="/memories") Memories
+        block content 
+        footer The Journey starts today..!!
+    script 
+        include ../static/script.js
+    block script

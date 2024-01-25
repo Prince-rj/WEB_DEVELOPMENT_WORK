@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            align-items: center;
+            text-align: center;
+            width: 50%;
+        }
+        .circle{
+            background-color: bisque;
+            margin: auto;
+            width: 440px;
+            height: 440px;
+            border-radius: 50%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            z-index: -1;
+
+        }
+        .parts{
+            /* border: 2px solid red; */
+            height: 220px;
+            width: 220px;
+            display: flex;
+        }
+        .parts:hover{
+            opacity: 15%;
+            background-color: white;
+            /* box-shadow:rgb(78, 78, 78) 5px; */
+        }
+        #part1{
+            border-radius:100% 0 0 0;
+        }
+        #part2{
+            border-radius: 0 100% 0 0 ;
+        }
+        #part3{
+            border-radius: 0 0 0 100%;
+        }
+        #part4{
+            border-radius: 0 0 100% 0;
+        }
+            .center{
+            width: 100px;
+            height: 100px;
+            /* border-radius: 50%; */
+            /* justify-content: center; */
+            /* align-items: center; */
+            margin: auto;
+            /* background-color: white; */
+        }
+        .center:hover{
+            /* border: 2px solid black; */
+            opacity: 15%;
+            background-color: white;
+
+        }
+        #cenpar1{
+            margin-right: 0px;
+            margin-bottom: 0px; 
+            border-radius:100% 0 0 0;       }
+        #cenpar2{
+            border-radius: 0 100% 0 0 ;
+            margin-bottom: 0px;
+            margin-left: 0px;
+        }
+        #cenpar3{
+            border-radius: 0 0 0 100%;
+            margin-top: 0px;
+            margin-right: 0px;
+        }
+        #cenpar4{
+            border-radius: 0 0 100% 0;
+            margin-top: 0px;
+            margin-left: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="circle">
+            <div id="part1"  class="parts">
+                <div class="center" id="cenpar1"></div>
+            </div>
+            <div id="part2" class="parts">
+                <div class="center" id="cenpar2"></div>
+            </div>
+            <div id="part3" class="parts">
+                <div class="center" id="cenpar3"></div>
+            </div>
+            <div id="part4" class="parts">
+                <div class="center" id="cenpar4"></div>
+            </div>
+        </div>
+        <!-- <div class="center"></div> -->
+    </div>
+</body>
+</html>

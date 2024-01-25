@@ -1,0 +1,30 @@
+.container{
+    height: 80vh;
+    border: 2px solid black;
+    width: 90%;
+    margin: auto;
+    overflow: scroll;
+    overflow-wrap: break-word;
+    scroll-snap-type: none;
+
+}
+.box{
+    width: 30%;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 20%;
+    background-color: rgb(216, 177, 255);
+}
+.left{
+    float: left;
+    clear: both;
+}
+.right{
+    clear: both;
+    float: right;
+}
+.form{
+    margin: auto;
+    width: 40%;
+    text-align: center ;
+}

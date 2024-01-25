@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLOCK</title>
+    <style>
+        .clock{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .clockcir{
+            border:7px double black;
+            height: 550px;
+            width: 550px;
+            border-radius: 50%;
+        }
+        .hourhand{
+            border-bottom:5px solid black;
+            width: 100px;
+            position: absolute;
+            top:50%;
+            right: 50%;
+            transform-origin: 99%;
+            /* height: px; */
+            transition: all 0.5s cubic-bezier(0, 1.09, 0.42, 1.91);
+            transform:rotate(90deg);
+        }
+        .minhand{
+            border-bottom: 3px solid black;
+            width:150px;
+            position: absolute;
+            top:50%;
+            right:50%;
+            transform-origin: 99%;
+            transition: all 0.5s cubic-bezier(0, 1.09, 0.42, 1.91);
+            transform:rotate(90deg);
+        }
+        .sechand{
+            transform:rotate(90deg);
+            transition: all 0.5s cubic-bezier(0, 1.09, 0.42, 1.91);
+            border-bottom: 1px solid black;
+            width:180px;
+            position: absolute;
+            top:50%;
+            right:50%;
+            transform-origin: 99%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="clock">
+        <div class="clockcir">
+            <div class="hourhand"></div>
+            <div class="minhand"></div>
+            <div class="sechand"></div>
+        </div>
+    </div>
+</body>
+<script>
+    let second=document.querySelector('.sechand');
+    let min=document.querySelector('.minhand');
+    let hour=document.querySelector('.hourhand');
+    setInterval(() => {
+        const date=new Date();
+        let seconds=date.getSeconds()
+        let mins=date.getMinutes()
+        let hours=date.getHours()
+        if(hours>12){
+            hours=hours-12;
+        }
+        second.style.transform=`rotate(${seconds*6+90}deg)`
+        if(seconds==0){
+            second.style.transition='none'
+            setTimeout(() => {
+                second.style.transition='all 0.5s cubic-bezier(0, 1.09, 0.42, 1.91)'
+            }, 100);
+        }
+        if(mins==0){
+            min.style.transition='none'
+            setTimeout(() => {
+                min.style.transition='all 0.5s cubic-bezier(0, 1.09, 0.42, 1.91)'
+            }, 100);
+        }
+        if(hours==12){
+            hour.style.transition='none'
+            setTimeout(() => {
+                hour.style.transition='all 0.5s cubic-bezier(0, 1.09, 0.42, 1.91)'
+            }, 100);
+        }
+        
+        
+        console.log(seconds)
+        min.style.transform=`rotate(${mins*6+90}deg)`
+        // console.log(hours);
+        hour.style.transform=`rotate(${hours*360/12+90}deg)`
+    }, 1000);
+</script>
+</html>

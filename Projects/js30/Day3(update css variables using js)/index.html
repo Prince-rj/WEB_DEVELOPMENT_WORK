@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --base: rgb(0, 153, 255);
+            --spacing: 12px;
+            --blur: 12px;
+        }
+        *{
+            margin:0;
+            padding: 0;
+        }
+        body{
+            text-align: center;
+        }
+        img{
+            /* width: 100vw; */
+            height: 80vh;
+            filter: blur(var(--blur));
+            padding: var(--spacing);
+            background: var(--base);
+
+        }
+        .inputs{
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div
+     class="inputs">
+     <span>Color</span>
+        <input type="color" name="base">
+
+        <span>Spacing</span>
+        <input type="range" name="spacing">
+
+        <span>Blur</span>
+        <input name="blur" type="range">
+
+    </div>
+    <img src="https://source.unsplash.com/random/?japan,festival" alt="" srcset="">
+    
+</body>
+<script>
+    let inputs=document.querySelectorAll('input');
+    // console.log(inputs);
+    inputs.forEach(element => {
+        element.addEventListener('change',()=>{
+            console.log(element.value);
+            document.documentElement.style.setProperty(`--${element.name}`,`${(element.name=='base')?element.value:element.value+'px'}`)
+        })
+        element.addEventListener('mousemove',()=>{
+            document.documentElement.style.setProperty(`--${element.name}`,`${(element.name=='base')?element.value:element.value+'px'}`)
+            console.log(element.value);
+            
+        })
+    });
+</script>
+</html>
